@@ -1,9 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\homecontroller;
-use App\Http\Controllers\logincontroller;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Basemane\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Users\ProfileController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +19,18 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [homecontroller::class, 'index']);
-Route::get('/login', [logincontroller::class, 'loginview'])->name('loginview');
-Route::post('/loginrequest', [logincontroller::class, 'loginrequest'])->name('login-post');
-Route::get('/logout', [logincontroller::class, 'logout'])->name('logout');
+
+Route::get('/login', [LoginController::class, 'loginview'])->name('loginview');
+Route::post('/loginrequest', [LoginController::class, 'loginrequest'])->name('login-post');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/register', [RegisterController::class, 'registerview'])->name('registerview');
 Route::post('/registerrequest', [RegisterController::class, 'registerrequest'])->name('register-post');
+
+
+// Public Dashbord
+Route::get('/', [DashboardController::class, 'index']);
+
+// User Profile Routes
+Route::get('/userProfile', [ProfileController::class, 'index']);
+
+

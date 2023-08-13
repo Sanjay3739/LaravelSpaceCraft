@@ -16,7 +16,7 @@
         <div class="ag-maecenas_title">
 
             <div class="ag-format-container">
-                Maecenas
+                Laravel Space
             </div>
 
         </div>
