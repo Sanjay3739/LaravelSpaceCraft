@@ -1,0 +1,128 @@
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: Heavitas;
+    src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot);
+    src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff2) format('woff2'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff) format('woff'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.ttf) format('truetype'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.svg#Heavitas) format('svg'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 18px;
+    color: #53545a;
+}
+
+.ag-maecenas_title {
+    padding: 250px 0;
+    background-color: #00a2ff;
+    text-align: center;
+    font-family: Heavitas, sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+    color: #FFF;
+
+    position: relative;
+}
+
+.ag-maecenas_title:before {
+    content: "";
+    height: 125px;
+    width: 100%;
+    background: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg) repeat-x scroll 0 0;
+    -webkit-background-size: 1600px 198px;
+    -moz-background-size: 1600px 198px;
+    -o-background-size: 1600px 198px;
+    background-size: 1600px 198px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    -webkit-filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+    filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+
+    -webkit-animation: an-wave 5s linear infinite;
+    -moz-animation: an-wave 5s linear infinite;
+    -o-animation: an-wave 5s linear infinite;
+    animation: an-wave 5s linear infinite;
+}
+
+.svg-img-block {
+    display: none;
+}
+
+@-webkit-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@-moz-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@-o-keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@keyframes an-wave {
+    100% {
+        background-position-x: -1600px;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .ag-maecenas_title {
+        font-size: 90px;
+    }
+
+    .ag-maecenas_descr {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+        width: 96%;
+    }
+
+
+    @media only screen and (max-width: 639px) {
+        .ag-maecenas_title {
+            font-size: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .ag-maecenas_title {
+            font-size: 40px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+        .ag-format-container {
+            width: 750px;
+        }
+
+    }
+
+    @media (min-width: 980px) and (max-width: 1161px) {
+        .ag-format-container {
+            width: 960px;
+        }
+
+    }
+}
