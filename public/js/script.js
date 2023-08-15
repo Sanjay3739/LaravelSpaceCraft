@@ -4,7 +4,7 @@
 
 /*
  * this is the javascipt for the Atrana template.
- * if you want to change, please create a new javascript, 
+ * if you want to change, please create a new javascript,
  * because if one is missing in the original Atrana javascript it will fall apart
  */
 
@@ -46,7 +46,7 @@ allDropdown.forEach(item=> {
 		item.classList.toggle('show');
 	})
 })
- 
+
 document.getElementById('basic').addEventListener('click', () => {
     Toastify({
         text: "This is a toast",
@@ -73,7 +73,7 @@ document.getElementById('top-left').addEventListener('click', () => {
         text: "This is toast in top left",
         duration: 3000,
         close:true,
-        gravity:"top",  
+        gravity:"top",
         position: "left",
         backgroundColor: "#4fbe87",
     }).showToast();
@@ -128,11 +128,11 @@ document.getElementById('bottom-left').addEventListener('click', () => {
         backgroundColor: "#4fbe87",
     }).showToast();
 })
- 
+
 
 
   /** Chartjs Pages **/
-  
+
 var chartColors = {
   red: 'rgb(255, 99, 132)',
   orange: 'rgb(255, 159, 64)',
@@ -550,7 +550,6 @@ var myline = new Chart(line, {
       },
   }
 });
- 
 
 
- 
+
